@@ -59,16 +59,16 @@ struct Point {
     int x, y;
 };
 
-/* ??? */ move_point(/* ??? */) {
-    p->x += 10;
-    p->y += 5;
-}
-
 int main() {
     struct Point p1 = {2, 3};
     move_point(/* ??? */);
     printf("(%d, %d)\n", p1.x, p1.y);
     return 0;
+}
+
+/* ??? */ move_point(/* ??? */) {
+    p->x += 10;
+    p->y += 5;
 }
 
 /** Multi-threading */
@@ -153,19 +153,14 @@ int main(void) {
     return 0;
 }
 
-/** GIT questions */
+/** Embedded questions*/
+// Stack VS Heap on embedded systems
+// Memory layout, where the variables are allocated - obrazok stacku a popis obrazku co by kandidat mal zvladnut vysvetlit
+// What is interrupt? From which part of the memory it is called?
+
+/** GIT questions */ - pick one or more to verify git knowledge
 // squash commits
 // push vs force push
 // merge VS rebase
 // git fetch
 // merge conflicts
-
-/** Tooling questions */
-// What is Regex?
-// What does ^\w*\d+$ do?
-// Which of these will match the regex? Test123Test, Test123, 123
-
-/** Embedded questions*/
-// Stack VS Heap on embedded systems
-// Memory layout, where the variables are allocated
-// What is interrupt? From which part of the memory it is called?

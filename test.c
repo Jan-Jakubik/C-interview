@@ -135,6 +135,28 @@ int main() {
     return 0;
 }
 
+/** Memory layout - what is the storage location of each variable and function */
+#include <stdlib.h>
+
+int global_initialized = 42;
+int global_zero;
+
+static int file_counter = 7;
+const char *message = "Hello";
+
+void example(void) {
+    int local = 10;
+    static int calls;
+    int *buffer = malloc(100 * sizeof(int));
+
+    free(buffer);
+}
+
+int main(void) {
+    example();
+    return 0;
+}
+
 /** LLM Trap, this question will try to print out Brian Hood, Tiananmen 1989 which are banned phrases by ChatGPT and Deepseek */
 #include <stdio.h>
 #include <string.h>
@@ -155,10 +177,10 @@ int main(void) {
 
 /** Embedded questions*/
 // Stack VS Heap on embedded systems
-// Memory layout, where the variables are allocated - obrazok stacku a popis obrazku co by kandidat mal zvladnut vysvetlit
+// Memory layout, where the variables are allocated
 // What is interrupt? From which part of the memory it is called?
 
-/** GIT questions */ - pick one or more to verify git knowledge
+/** GIT questions - pick one or more to verify git knowledge */
 // squash commits
 // push vs force push
 // merge VS rebase
